@@ -1,0 +1,98 @@
+import React from "react";
+
+import { Head } from "./head";
+
+import { Navbar } from "@/components/navbar";
+import {Link} from "@nextui-org/react";
+import { siteConfig } from "@/config/site";
+import { MainLogo } from "@/components/MainLogo";
+import { Button } from "@nextui-org/button";
+import {
+  InstagramIcon,
+  FacebookIcon,
+  WhatsappIcon,
+} from "@/components/icons";
+
+export default function DefaultLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <div className="relative flex flex-col h-screen">
+      <Head />
+      <Navbar />
+      <main className="container mx-auto max-w-7xl px-6 flex-grow pt-16">
+        {children}
+      </main>
+      <footer className="footer-container">
+        <div className="main-footer w-full flex py-3">
+          <div className="footer1">
+            <div className="footer-logo">
+              <MainLogo></MainLogo>
+              <span>Síguenos en:</span>
+              <div className="footer-social">
+                <Link isExternal href={siteConfig.links.facebook}>
+                  <FacebookIcon/>
+                </Link>
+                <Link isExternal href={siteConfig.links.instagram}>
+                  <InstagramIcon />
+                </Link>
+              </div>
+              <div>
+              <Button
+                isExternal
+                as={Link}
+                className="text-sm font-normal text-default-600 bg-default-100"
+                href={siteConfig.links.whatsapp}
+                startContent={<WhatsappIcon className="text-success" />}
+                variant="flat"
+              >
+                ¡Contrata Ya!
+              </Button>
+              </div>
+            </div>
+            <div className="footer-section">
+              <span className="footer-title">Leyes y Reglamentos</span>
+              <Link href="/docs/reglamento_abonado.pdf" target="_blank" underline="hover">Reglamento de Abonados</Link>
+              <Link href="/docs/reglamento_tercera_edad.pdf" target="_blank" underline="hover">Reglamento Tercera Edad</Link>
+              <Link href="/docs/reglamento_ley_organica_de_telecomunicaciones.pdf" target="_blank" underline="hover">Reglamento Ley orgánica de telecomunicaciones</Link>
+              <Link href="/docs/ley_organica_adultos_mayores.pdf" target="_blank" underline="hover">Ley Orgánica del adulto mayor</Link>
+              <Link href="/docs/ley_organica_de_telecomunicaciones.pdf" target="_blank" underline="hover">Ley Orgánica de Telecomunicaciones</Link>
+              <Link href="/docs/politica_publica_internet_segura.pdf" target="_blank" underline="hover">Política publica por
+              una internet segura</Link>
+            </div> 
+          </div>
+          <div className="footer2">
+            <div className="footer-section">
+              <span className="footer-title">Información Adiconal</span>
+              <Link href="/docs/consejos_de_seguridad.pdf" target="_blank" underline="hover">Consejos de seguridad</Link>
+              <Link href="/docs/control_parental.pdf" target="_blank" underline="hover">Control Parental</Link>
+              <Link href="/docs/calidad_servicio.pdf" target="_blank" underline="hover">Calidad del Servicio</Link>
+              <Link href="/docs/parametros_de_calidad.pdf" target="_blank" underline="hover">Parámetros de calidad</Link>
+              <Link href="/docs/terminologias.pdf" target="_blank" underline="hover">Terminologías</Link>
+            </div> 
+            <div className="footer-section">
+              <span className="footer-title">Otros enlaces</span>
+              <Link href="#" underline="hover">Internet Corporativo</Link>
+              <Link href="#" underline="hover">Test de Velocidad</Link>
+              <Link href="#" underline="hover">Preguntas frecuentes</Link>
+            </div>
+          </div>
+        </div>
+        <div className="credit-footer w-full flex items-center justify-center py-3">
+          <Link
+            isExternal
+            className="flex items-center gap-1 text-current"
+            href="/"
+            title="Tu internet de confianza"
+          >
+            <p className="text-primary">Esetel 2024</p>
+          </Link>
+        </div>
+      </footer>
+    </div>
+  );
+}
+
+
