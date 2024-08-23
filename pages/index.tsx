@@ -1,11 +1,14 @@
 import { Link } from "@nextui-org/link";
+
 import { button as buttonStyles } from "@nextui-org/theme";
+
 import React from "react";
+import { useTheme } from "next-themes";
+import {Card, CardHeader, CardFooter, Image} from "@nextui-org/react";
+
 import { siteConfig } from "@/config/site";
 import { subtitle, title } from "@/components/primitives";
 import DefaultLayout from "@/layouts/default";
-import { useTheme } from "next-themes";
-import {Card, CardHeader, CardBody, CardFooter, Image, Button} from "@nextui-org/react";
 
 export default function IndexPage() {
   const { theme } = useTheme()
