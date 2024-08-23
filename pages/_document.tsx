@@ -6,7 +6,7 @@ export default function Document() {
       <Head>
       <link rel="stylesheet" href="../styles/general.css" type="text/css" />
       </Head>
-      <body className="min-h-screen bg-background font-sans antialiased">
+      <body suppressHydrationWarning className="min-h-screen bg-background font-sans antialiased">
         <Main />
         <NextScript />
       </body>
