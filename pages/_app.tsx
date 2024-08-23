@@ -11,7 +11,6 @@ import 'tailwindcss/tailwind.css'
 
 export default function App({ Component, pageProps }: AppProps) {
   const router = useRouter();
-
   return (
     <NextUIProvider navigate={router.push}>
       <NextThemesProvider>

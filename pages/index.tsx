@@ -11,7 +11,7 @@ import { subtitle, title } from "@/components/primitives";
 import DefaultLayout from "@/layouts/default";
 
 export default function IndexPage() {
-  const { theme } = useTheme()
+  const { theme, setTheme, resolvedTheme } = useTheme()
   return (
     <DefaultLayout>
       <section id="inicio" className="flex gap-3 justify-center items-center flex-wrap">
@@ -41,7 +41,12 @@ export default function IndexPage() {
           </div>
         </div>
         <div className="inline-block max-w-lg">
-          <div className={ theme === 'light' ? 'fondo' : 'fondo-dark'}></div>
+          {
+            theme === 'dark' ? <div className="fondo-dark"></div> : false
+          }
+          {
+            theme === 'light' ? <div className="fondo"></div> : false
+          }
         </div>
       </section>
       <section id="planes" className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
