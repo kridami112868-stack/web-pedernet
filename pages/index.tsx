@@ -71,7 +71,7 @@ export default function IndexPage() {
                   <p className="text-tiny text-white/60">Compartición 4:1</p>
                 </div>
               </div>
-              <a className={ theme === 'dark' ? 'contratar-dark': 'contratar'} target="_blank" href="https://w.app/esetelplanbasico">¡Contratar ahora!</a>
+              <a className={ theme === 'dark' ? 'contratar-dark': 'contratar'} target="_blank" rel="noreferrer" href="https://w.app/esetelplanbasico">¡Contratar ahora!</a>
             </CardFooter>
           </Card>
           <Card isFooterBlurred className="w-[310px] h-[300px] col-span-12 sm:col-span-7">
@@ -99,7 +99,7 @@ export default function IndexPage() {
                   <p className="text-tiny text-white/60">Compartición 4:1</p>
                 </div>
               </div>
-              <a className={ theme === 'dark' ? 'contratar-dark': 'contratar'} target="_blank" href="https://w.app/esetelplanstandard">¡Contratar ahora!</a>
+              <a className={ theme === 'dark' ? 'contratar-dark': 'contratar'} target="_blank" rel="noreferrer" href="https://w.app/esetelplanstandard">¡Contratar ahora!</a>
             </CardFooter>
           </Card>
           <Card isFooterBlurred className="w-[310px] h-[300px] col-span-12 sm:col-span-7">
@@ -127,7 +127,7 @@ export default function IndexPage() {
                   <p className="text-tiny text-white/60">Compartición 1:1</p>
                 </div>
               </div>
-              <a className={ theme === 'dark' ? 'contratar-dark': 'contratar'} target="_blank" href="https://w.app/esetelplancorporativo">¡Contratar ahora!</a>
+              <a className={ theme === 'dark' ? 'contratar-dark': 'contratar'} target="_blank" rel="noreferrer" href="https://w.app/esetelplancorporativo">¡Contratar ahora!</a>
             </CardFooter>
           </Card>
         </div>
