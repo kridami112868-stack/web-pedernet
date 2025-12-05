@@ -1,7 +1,7 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: "Esetel",
+  name: "Pedernet",
   description: "Disfruta de una experiencia Única con la máxima velocidad",
   navItems: [
     {
@@ -32,15 +32,15 @@ export const siteConfig = {
     },
   ],
   links: {
-    facebook: "https://www.facebook.com/esetel.ec",
+    facebook: "#",
     instagram: "#",
     whatsapp: "https://w.app/LBCxuf",
-    github: "https://github.com/nextui-org/nextui",
-    twitter: "https://twitter.com/getnextui",
+    github: "#",
+    twitter: "#",
     inicio: "#inicio",
     planes: "#planes",
     contacto: "#contacto",
-    discord: "https://discord.gg/9b6yyZKmH4",
-    sponsor: "https://patreon.com/jrgarciadev",
+    discord: "#",
+    sponsor: "#",
   },
 };

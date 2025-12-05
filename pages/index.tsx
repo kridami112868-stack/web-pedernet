@@ -4,7 +4,7 @@ import { button as buttonStyles } from "@nextui-org/theme";
 
 import React from "react";
 import { useTheme } from "next-themes";
-import {Card, CardHeader, CardFooter, Image} from "@nextui-org/react";
+import { Card, CardHeader, CardFooter, Image } from "@nextui-org/react";
 
 import { siteConfig } from "@/config/site";
 import { subtitle, title } from "@/components/primitives";
@@ -41,12 +41,7 @@ export default function IndexPage() {
           </div>
         </div>
         <div className="inline-block max-w-lg">
-          {
-            theme === 'dark' ? <div className="fondo-dark"></div> : false
-          }
-          {
-            theme === 'light' ? <div className="fondo"></div> : false
-          }
+          <div className="bg-[url('/fondo.png')] bg-[length:320px] w-[320px] h-[320px] shadow-[inset_0_0_8px_8px_white] dark:shadow-[inset_0_0_8px_8px_rgb(0,0,0)]"></div>
         </div>
       </section>
       <section id="planes" className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
@@ -57,7 +52,7 @@ export default function IndexPage() {
           <Card isFooterBlurred className="w-[310px] h-[300px] col-span-12 sm:col-span-7">
             <CardHeader className="absolute z-10 top-1 flex-col items-start">
               <p className="text-tiny text-white/60 uppercase font-bold">PLAN BÁSICO</p>
-              <h4 className="price">$19.99</h4>
+              <h4 className="price">$25.00</h4>
               <h4 className="text-white/90 font-medium text-xl">Wifi 6</h4>
               <h4 className="text-white/90 font-medium text-xl">Router Dual Band</h4>
             </CardHeader>
@@ -79,13 +74,13 @@ export default function IndexPage() {
                   <p className="text-tiny text-white/60">Compartición 4:1</p>
                 </div>
               </div>
-              <a className={ theme === 'dark' ? 'contratar-dark': 'contratar'} target="_blank" rel="noreferrer" href="https://w.app/esetelplanbasico">¡Contratar ahora!</a>
+              <a className="bg-[#e0e0e0] text-black dark:bg-[#4b4b4b] dark:text-white p-2 rounded-[20px] text-xs" target="_blank" rel="noreferrer" href="https://w.app/esetelplanbasico">¡Contratar ahora!</a>
             </CardFooter>
           </Card>
           <Card isFooterBlurred className="w-[310px] h-[300px] col-span-12 sm:col-span-7">
             <CardHeader className="absolute z-10 top-1 flex-col items-start">
-              <p className="text-tiny text-white/60 uppercase font-bold">PLAN STANDARD</p>
-              <h4 className="price">$24.99</h4>
+              <p className="text-tiny text-white/60 uppercase font-bold">PLAN PRO</p>
+              <h4 className="price">$30.00</h4>
               <h4 className="text-white/90 font-medium text-xl">Wifi 6</h4>
               <h4 className="text-white/90 font-medium text-xl">Router Dual Band</h4>
             </CardHeader>
@@ -103,19 +98,19 @@ export default function IndexPage() {
                   src="/rayo.png"
                 />
                 <div className="flex flex-col">
-                  <p className=" text-white/90">50 Megas</p>
+                  <p className=" text-white/90">30 Megas</p>
                   <p className="text-tiny text-white/60">Compartición 4:1</p>
                 </div>
               </div>
-              <a className={ theme === 'dark' ? 'contratar-dark': 'contratar'} target="_blank" rel="noreferrer" href="https://w.app/esetelplanstandard">¡Contratar ahora!</a>
+              <a className="bg-[#e0e0e0] text-black dark:bg-[#4b4b4b] dark:text-white p-2 rounded-[20px] text-xs" target="_blank" rel="noreferrer" href="https://w.app/esetelplanstandard">¡Contratar ahora!</a>
             </CardFooter>
           </Card>
           <Card isFooterBlurred className="w-[310px] h-[300px] col-span-12 sm:col-span-7">
             <CardHeader className="absolute z-10 top-1 flex-col items-start">
-              <p className="text-tiny text-white/60 uppercase font-bold">PLAN CORPORATIVO</p>
-              <h4 className="price">Precio por mega</h4>
-              <h4 className="text-white/90 font-medium text-xl">Atención Personalizada</h4>
-              <h4 className="text-white/90 font-medium text-xl">24/7</h4>
+              <p className="text-tiny text-white/60 uppercase font-bold">PLAN PREMIUM</p>
+              <h4 className="price">$40.00</h4>
+              <h4 className="text-white/90 font-medium text-xl">Wifi 6</h4>
+              <h4 className="text-white/90 font-medium text-xl">Router Dual Band</h4>
             </CardHeader>
             <Image
               removeWrapper
@@ -131,11 +126,11 @@ export default function IndexPage() {
                   src="/global.png"
                 />
                 <div className="flex flex-col">
-                  <p className=" text-white/90">Personalizado</p>
-                  <p className="text-tiny text-white/60">Compartición 1:1</p>
+                  <p className=" text-white/90">50 Megas</p>
+                  <p className="text-tiny text-white/60">Compartición 4:1</p>
                 </div>
               </div>
-              <a className={ theme === 'dark' ? 'contratar-dark': 'contratar'} target="_blank" rel="noreferrer" href="https://w.app/esetelplancorporativo">¡Contratar ahora!</a>
+              <a className="bg-[#e0e0e0] text-black dark:bg-[#4b4b4b] dark:text-white p-2 rounded-[20px] text-xs" target="_blank" rel="noreferrer" href="https://w.app/esetelplancorporativo">¡Contratar ahora!</a>
             </CardFooter>
           </Card>
         </div>
@@ -143,8 +138,8 @@ export default function IndexPage() {
       <section id="contacto" className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
         <div className="inline-block max-w-lg text-center justify-center">
           <h1 className={title()}>Contacto</h1>
-          <h1 className={subtitle()}>+593989045501 Whatsapp</h1>
-          <h1 className={subtitle()}>info@esetel.ec</h1>
+          <h1 className={subtitle()}>+593997257997 Whatsapp</h1>
+          <h1 className={subtitle()}>info@pedernet.com</h1>
         </div>
       </section>
     </DefaultLayout>

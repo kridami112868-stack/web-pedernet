@@ -54,13 +54,12 @@ export const Navbar = () => {
           ))}
         </div>
         <NavbarItem className="hidden sm:flex gap-2">
-          <Link isExternal href={siteConfig.links.facebook}>
-            <FacebookIcon/>
+          {/* <Link isExternal href={siteConfig.links.facebook}>
+            <FacebookIcon />
           </Link>
           <Link isExternal href={siteConfig.links.instagram}>
             <InstagramIcon />
-          </Link>
-          <ThemeSwitch />
+          </Link> */}
         </NavbarItem>
         <NavbarItem className="hidden md:flex">
           <Button
@@ -80,7 +79,6 @@ export const Navbar = () => {
         <Link isExternal href={siteConfig.links.whatsapp}>
           <WhatsappIcon className="text-default-500" />
         </Link>
-        <ThemeSwitch />
         <NavbarMenuToggle />
       </NavbarContent>
 
