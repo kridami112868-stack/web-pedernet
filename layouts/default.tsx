@@ -47,7 +47,7 @@ export default function DefaultLayout({
           <div className="footer-section">
             <span className="footer-title">Leyes y Reglamentos</span>
             <Link href="/docs/reglamento_tercera_edad.pdf" target="_blank" rel="noreferrer" underline="hover">Reglamento Tercera Edad</Link>
-            <Link href="/docs/reglamento_ley_organica_telecomunicaciones.pdf" target="_blank" rel="noreferrer" underline="hover">Reglamento Ley orgánica de telecomunicaciones</Link>
+            <Link href="/docs/reglamento_ley_organica_de_telecomunicaciones.pdf" target="_blank" rel="noreferrer" underline="hover">Reglamento Ley orgánica de telecomunicaciones</Link>
             <Link href="/docs/REGLAMENTO_PRESTACION_SERVICIOS_VALOR_AGREGADO.pdf" target="_blank" rel="noreferrer" underline="hover">Reglamento para la prestación de servicios y valor agregado</Link>
             <Link href="/docs/REGLAMENTO_PRESTACION_SERVICIOS_TELECOMUNICACIONES.pdf" target="_blank" rel="noreferrer" underline="hover">Reglamento de prestación de servicios de telecomunicaciones y radiodifusión suscripción</Link>
             <Link href="/docs/LEY_ORGANICA_PERSONAS_ADULTOS_MAYORES.pdf" target="_blank" rel="noreferrer" underline="hover">Ley Orgánica de personas adultos mayores</Link>
