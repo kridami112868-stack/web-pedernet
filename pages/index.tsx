@@ -19,6 +19,10 @@ export default function IndexPage() {
           <h1 className={title()}>Disfruta de una experiencia&nbsp;</h1>
           <h1 className={title({ color: "violet" })}>Única&nbsp;</h1>
           <br />
+          <div className="block max-w-lg">
+            <img src="/portada.jpeg" alt="pedernet" />
+          </div>
+          <br />
           <div className="conexion">
             <h1 className={title()}>
               Conexión sin límites.
@@ -39,9 +43,6 @@ export default function IndexPage() {
               ¡Quiero mi plan!
             </Link>
           </div>
-        </div>
-        <div className="inline-block max-w-lg">
-          <div className="bg-[url('/fondo.png')] bg-[length:320px] w-[320px] h-[320px] shadow-[inset_0_0_8px_8px_white] dark:shadow-[inset_0_0_8px_8px_rgb(0,0,0)]"></div>
         </div>
       </section>
       <section id="planes" className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
