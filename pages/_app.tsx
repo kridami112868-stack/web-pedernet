@@ -13,7 +13,7 @@ export default function App({ Component, pageProps }: AppProps) {
   const router = useRouter();
   return (
     <NextUIProvider navigate={router.push}>
-      <NextThemesProvider>
+      <NextThemesProvider defaultTheme="light" attribute="class" forcedTheme="light" enableSystem={false}>
         <Component {...pageProps} />
       </NextThemesProvider>
     </NextUIProvider>
