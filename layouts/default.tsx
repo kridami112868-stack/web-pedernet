@@ -46,23 +46,23 @@ export default function DefaultLayout({
           </div>
           <div className="footer-section">
             <span className="footer-title">Leyes y Reglamentos</span>
-            <Link href="/docs/REGLAMENTO_TERCERA_EDAD.pdf" target="_blank" rel="noreferrer" underline="hover">Reglamento Tercera Edad</Link>
-            <Link href="/docs/REGLAMENTO_LEY_ORGANICA_DE_TELECOMUNICACIONES.pdf" target="_blank" rel="noreferrer" underline="hover">Reglamento Ley orgánica de telecomunicaciones</Link>
+            <Link href="/docs/reglamento_tercera_edad.pdf" target="_blank" rel="noreferrer" underline="hover">Reglamento Tercera Edad</Link>
+            <Link href="/docs/reglamento_ley_organica_telecomunicaciones.pdf" target="_blank" rel="noreferrer" underline="hover">Reglamento Ley orgánica de telecomunicaciones</Link>
             <Link href="/docs/REGLAMENTO_PRESTACION_SERVICIOS_VALOR_AGREGADO.pdf" target="_blank" rel="noreferrer" underline="hover">Reglamento para la prestación de servicios y valor agregado</Link>
             <Link href="/docs/REGLAMENTO_PRESTACION_SERVICIOS_TELECOMUNICACIONES.pdf" target="_blank" rel="noreferrer" underline="hover">Reglamento de prestación de servicios de telecomunicaciones y radiodifusión suscripción</Link>
             <Link href="/docs/LEY_ORGANICA_PERSONAS_ADULTOS_MAYORES.pdf" target="_blank" rel="noreferrer" underline="hover">Ley Orgánica de personas adultos mayores</Link>
-            <Link href="/docs/LEY_ORGANICA_DE_TELECOMUNICACIONES.pdf" target="_blank" rel="noreferrer" underline="hover">Ley Orgánica de Telecomunicaciones</Link>
+            <Link href="/docs/ley_organica_de_telecomunicaciones.pdf" target="_blank" rel="noreferrer" underline="hover">Ley Orgánica de Telecomunicaciones</Link>
             <Link href="/docs/LEY_ORGANICA_DISCAPACIDADES.pdf" target="_blank" rel="noreferrer" underline="hover">Ley Orgánica de Discapacidades</Link>
-            <Link href="/docs/POLITICA_PUBLICA_INTERNET_SEGURA.pdf" target="_blank" rel="noreferrer" underline="hover">Política publica por una internet segura</Link>
+            <Link href="/docs/politica_publica_internet_segura.pdf" target="_blank" rel="noreferrer" underline="hover">Política publica por una internet segura</Link>
           </div>
           <div className="footer-section">
             <span className="footer-title">Información Adiconal</span>
-            <Link href="/docs/CONSEJOS_DE_SEGURIDAD.pdf" target="_blank" rel="noreferrer" underline="hover">Consejos de seguridad</Link>
+            <Link href="/docs/consejos_de_seguridad.pdf" target="_blank" rel="noreferrer" underline="hover">Consejos de seguridad</Link>
             <Link href="/docs/QOS_SVA.pdf" target="_blank" rel="noreferrer" underline="hover">QOS</Link>
             <Link href="/docs/NORMA_TECNICA_REGULA_CONTRATOS_DE_ADHESION.pdf" target="_blank" rel="noreferrer" underline="hover">Norma técnica regula contratos de adhesión</Link>
-            <Link href="/docs/CONTROL_PARENTAL.pdf" target="_blank" rel="noreferrer" underline="hover">Control Parental</Link>
+            <Link href="/docs/control_parental.pdf" target="_blank" rel="noreferrer" underline="hover">Control Parental</Link>
             <Link href="/docs/PARAMETROS_DE_CALIDAD_GOBRAVCORPSA.pdf" target="_blank" rel="noreferrer" underline="hover">Parámetros de calidad</Link>
-            <Link href="/docs/TERMINOLOGIAS.pdf" target="_blank" rel="noreferrer" underline="hover">Terminologías</Link>
+            <Link href="/docs/terminologias.pdf" target="_blank" rel="noreferrer" underline="hover">Terminologías</Link>
           </div>
           {/* <div className="footer-section">
             <span className="footer-title">Otros enlaces</span>
